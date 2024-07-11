@@ -1,0 +1,107 @@
+.navbar1{
+    height: 100px;
+    position: relative;
+   
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px;
+    background: #1a202c;  
+    
+}
+
+.navbar-ul{
+    display: flex;
+    font-size: 1.2rem;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    margin-bottom: 0;
+    text-decoration: none;
+    margin-right: 15rem;
+    list-style-type: none;
+}
+
+.navbar-ul li{
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 5px 15px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.navbar-ul li:hover{
+    background-color: white;
+    color: black;
+}
+
+.indurance-nav-right {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 33%;
+    height: 120%;
+    background-color: #ed2884;
+    
+    text-transform: capitalize;
+    color: white;
+    padding-left: 40px;
+    padding-top: 20px;
+    z-index: 1;
+}
+.indurance-nav-right:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -19px;
+    width: 40px;
+    height: 100%;
+    background-color:#ed2884;
+    -webkit-transform: skew(-20deg);
+    -ms-transform: skew(-20deg);
+    transform: skew(-20deg);
+}
+.navicon-div{
+    position: absolute;
+    left: -34px;
+    top: 32px;
+    background-color: #fff;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navicon-div i{
+    color: #ed2884;
+}
+
+.btn-navbar{
+    padding: 10px 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #1a202c;
+    color: white;
+}
+
+
+@media only screen and (min-width: 1200px) and (max-width: 1399.98px) {
+    .indurance-nav-right {
+        width: 20%;
+    }
+}
+@media (min-width:1400px) and (max-width:1800px){
+    .indurance-nav-right {
+        width: 18%;
+        padding-top:25px ;
+    }
+    .navbar-ul{
+        margin-right: 15rem;
+    }
+}

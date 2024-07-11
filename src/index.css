@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Flaticon');
+
+body {
+  margin: 0;
+  
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 15px;
+  line-height: 28px;
+  font-weight: 400;
+  font-family: 'Open Sans', sans-serif;
+  overflow-x: hidden !important;
+  
+}
+
+h1,h2,h3,h4,h5,h6{
+
+  position:relative;
+
+  font-family: 'Cabin', sans-serif;
+
+  font-weight: 400;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+@media only screen and (max-width: 600px) {
+  *{
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+  input{
+    touch-action: none;
+  }
+  .StripeElement{
+    touch-action: none;
+  }
+
+ 
+
+}
